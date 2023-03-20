@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PokemonLibrary\PokemonLibrary.csproj" />
+    <ProjectReference Include="..\PokemonRestAPITests\PokemonRestAPITests.csproj" />
+    <ProjectReference Include="..\PokemonRestAPI\PokemonRestAPI.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="PokemonLibrary">
+	<HintPath>..\PokemonLibrary\bin\Debug\net6.0\PokemonLibrary.dll</HintPath>
+	</Reference>
+	</ItemGroup>
+	
+</Project>
